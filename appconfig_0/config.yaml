@@ -1,0 +1,135 @@
+devices:
+    common: []
+    debug: []
+    release: []
+dockercomposefile:
+    common: docker-compose.yaml
+    debug: ''
+    release: ''
+extraparms:
+    common:
+        network_mode: host
+    debug: {}
+    release: {}
+id: 4547c79e-e7d6-4dfa-b956-d36b9f5471bf
+images:
+    debug: sha256:811bd7f3080c4ebcea0852dbba72c0883ee9e4add0e585c842cefe6e68445be8
+    release: ''
+imagetags:
+    debug: scanner_arm64v8-debian-python3_bullseye_debug_4547c79e-e7d6-4dfa-b956-d36b9f5471bf
+    release: scanner_arm64v8-debian-python3_bullseye_release_4547c79e-e7d6-4dfa-b956-d36b9f5471bf
+modificationdate: '2022-02-11T18:34:49.817161'
+networks:
+    common: []
+    debug: []
+    release: []
+platformid: arm64v8-debian-python3_bullseye
+ports:
+    common: {}
+    debug: {}
+    release: {}
+privatekey: '-----BEGIN RSA PRIVATE KEY-----
+
+    MIIEpAIBAAKCAQEAo1zl+9eCo0Euuo58B97KbH5qEHWFW0P0OUk8oKexeaxlp7SV
+
+    L0mxeKYLl2W3SceHtunfNyGcsROpHygRE5srTNG1GjTuIsnJdXEfvql7glSRyRG8
+
+    Mxhb+VUea6CB2hq7sANp0twj+LIRJylHw1ajOn8JZKzmGthRmjF37SZAflL0JSyj
+
+    9i4e8wl6Qdb+nRxJmjzwkHRxGz53b2CBN5XP1qIz5RLGXL+N7ceI19AjOoi7wd01
+
+    GdwY/JGFa4Ls0rkwcpPE/yOls0jOFGZdO4VDRWScx3WvGtMj3ImSYVsnYYF2NOQk
+
+    hT1MTX0JmPOr2UnWB33hi0QCDjmuu87MK884aQIDAQABAoIBADMHFpOG6riB6M2/
+
+    KgDvV31yM0E25FPwsv2d4cExAF/IOOycnKjrtPLBswc0b38tQzggb2fyKNarFH21
+
+    7zeXlXvmWVJ5TBUzwKjdkBPnLrw0HGGZF5dCOaB1NQ5bUZRGG3BMcKa7usS5ImCA
+
+    JXlfu5bPDakT1MB3521pnFNISobqdH83FRDIZ+jLSXdv/wnJ/Lq0IStY8oRyPhZ9
+
+    KDeU5WUjjetmlNjLvfRchXgC6E2h4O+HPxRHUaRhiTTApBpLU8CR4Ncf+m61iyxT
+
+    K0hVYAkirBR4EBUfSQhRDRH6ogVo5AzVx0y9Dv98QvFlDlt/MFckygRM6tzuWuja
+
+    orWdSIECgYEA2IlhIjA1XK7n06a7Puw+whkd2VXG0PjGrRdre7nZmHUa+kI0nsmz
+
+    kabzaCbopSh9rcFBueMiQeB3F7sSD98V+Oty7zWzpLYmoU/4I7mTqilSPCnCpV8Q
+
+    xprdcXv+Wg+xx4BHDuiaFHpGU4SHDcOVFAFjDQl01cA5R5KpaiJY+dECgYEAwSKs
+
+    Bu773TNSVNkxQJZ0E5URyVbKA8LQ/3hkr8tUlWWX2B5w2nxd8xiqNh5pAgjDB0gm
+
+    JatsGDeWjPlv9un3JzjSzuVzvGzSBCBHdmcvrumw2Cd+4hnolEK7+wqbisb9JYx1
+
+    6l+4BJu2CW7mzJ+ShRfJNGkcmuSHCgRl534TYxkCgYEAtn7CMJA0yRJYLBc/hH6T
+
+    Pf7xGzShxYmF2Gf+nF48N7OqsvSNaK5R+xWb21G/jUKc+Y4BGOuG+cJ2XLe7N0kr
+
+    OYkmatj1uIIT+KxvU5yaCTWeKzp+4+VFPD1VGMoJylmj2aIRQU1kXpHXJ5hwQndt
+
+    81hf5KLtpyDEpb/DrMGZ/6ECgYEAre1WdEwFv3d3XnfVte+ICxaE1Qd2l5p68oXu
+
+    Tq3St1OtQfBv+yJizQhaSLBsKmvPjqA30lak2s48oyoC3Z5neAfhOHdEGdz56MNU
+
+    99kHBQLowlAXIPDqFZJfjT1JQ9ndoVHz4qReqK+9aJNZ/854eakpBizemNLSlX/O
+
+    cYGFXgkCgYAObiTUCopxfbJVBONPYJQ0zUj8oCwUQlDS8DF/heFvNeBvv7xSy7Jg
+
+    /mtj8mAwj0l3E8mg+482+SHb42OCpsNTnJlvj4xB5qdfTedj0g2a5+31MhzQM7wp
+
+    JCAX25F00OsIfT903OTfmEGnMu7hf+ojBfC8S99WsudNPNuVQfxSMQ==
+
+    -----END RSA PRIVATE KEY-----
+
+    '
+props:
+    common:
+        appargs: ''
+        appname: scanner
+        arg: ''
+        buildcommands: ''
+        buildfiles: ''
+        command: ''
+        devpackages: ''
+        env: ''
+        expose: ''
+        extrapackages: strace bluetooth libbluetooth-dev build-essential python3-dev
+            libcap2-bin influxdb-client
+        language: python
+        main: main.py
+        preinstallcommands: ''
+        runtime: python3
+        sdkpostinstallcommands: ''
+        sdkpreinstallcommands: ''
+        targetcommands: ''
+        targetfiles: ''
+    debug:
+        arg: 'ARG SSHUSERNAME=#%application.username%#
+
+            '
+    release: {}
+publickey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCjXOX714KjQS66jnwH3spsfmoQdYVbQ/Q5STygp7F5rGWntJUvSbF4pguXZbdJx4e26d83IZyxE6kfKBETmytM0bUaNO4iycl1cR++qXuCVJHJEbwzGFv5VR5roIHaGruwA2nS3CP4shEnKUfDVqM6fwlkrOYa2FGaMXftJkB+UvQlLKP2Lh7zCXpB1v6dHEmaPPCQdHEbPndvYIE3lc/WojPlEsZcv43tx4jX0CM6iLvB3TUZ3Bj8kYVrguzSuTByk8T/I6WzSM4UZl07hUNFZJzHda8a0yPciZJhWydhgXY05CSFPUxNfQmY86vZSdYHfeGLRAIOOa67zswrzzhp
+sdkimages:
+    debug: ''
+    release: ''
+sdkimagetags:
+    debug: ''
+    release: ''
+sdksshaddress:
+    debug: null
+    release: null
+shutdownscript:
+    common: ''
+    debug: ''
+    release: ''
+startupscript:
+    common: ''
+    debug: ''
+    release: ''
+username: torizon
+volumes:
+    common: {}
+    debug:
+        /home/torizon/scanner: /scanner,rw
+    release: {}
