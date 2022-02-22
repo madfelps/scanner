@@ -1,3 +1,5 @@
+import bluetooth
+
 while(1):
     #Scanning our nearby devices using bluetooth
     nearby_devices = bluetooth.discover_devices(lookup_names=True)
